@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="shortcut icon" href="../image/logo-header.png">
+    <title>Catalog</title>
+</head>
+<body>
+    <header>
+        <div class="wrapper">
+                <div class="header-wrapper">
+                    <div class="logo">
+                        <div class="header-logo">
+                        <a href="#" class="logo-link">
+                            <img src="../image/logo-header.png" class="logo-image" alt="header-logo">
+                    </a> 
+                    </div>
+                    <div class="logo-text">
+                        <p class="text">Flowers let's go</p>
+                    </div>
+                     </div>
+                    <nav class="nav">
+                       <ul class="nav-block">
+                        <li class="nav-list"> <a href="#" class="header-link">О нас</a></li>
+                        <li class="nav-list"><a href="#" class="header-link">Каталог</a></li>
+                        <li class="nav-list"><a href="#" class="header-link">Где нас найти</a></li>
+                       </ul>
+                    </nav>
+                    <div class="btn">
+                        <button class="reg-btn">Регестрация</button>
+                        <button class="auth-btn">Авторизоваться</button>
+                    </div>
+                </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="wrapper">
+            <div class="main-wrapper-store">
+
+                <form class="search-form" action="/search" method="get">
+
+                        <input class="search-btn" type="text" id="search-input" name="query" placeholder="Поиск...">
+
+                        <select id="sort-select" name="select" class="sort">
+                            <option value="relevance">По популярности</option>
+                            <option value="price_up">По цене(Возрастанию)</option>
+                            <option value="price_down">По цене (Убывание)</option>
+                            <option value="date_up">По дате(Возрастанию)</option>
+                            <option value="date_down">По дате(Убывание)</option>
+                        </select>
+
+                        <button type="submit" id="search-button" class="sub-btn">Найти</button>
+                </form>
+
+                <div class="main-store">
+                    <div class="store-up">
+                        <div class="menu-item">
+                            <img src="../image/pion.jpg" alt="menu-hotdog1" class="menu-img">
+                            <div class="store-border">
+                                <div class="menu-item-text">
+                                    <h4 class="menu-item-title">Lorem ipsum dolor</h4>
+                                    <p class="menu-item-subtitle">Lorem ipsum dolor sit, amet consectetur adipisicing elit</p>
+                                </div>
+                                <div class="menu-button">
+                                    <button class="menu-btn">Order now</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <img src="../image/siren.jpg" alt="menu-hotdog1" class="menu-img">
+                            <div class="store-border">
+                                <div class="menu-item-text">
+                                    <h4 class="menu-item-title">Lorem ipsum dolor</h4>
+                                    <p class="menu-item-subtitle">Lorem ipsum dolor sit, amet consectetur adipisicing elit</p>
+                                </div>
+                                <div class="menu-button">
+                                    <button class="menu-btn">Order now</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <img src="../image/rose-1.jpg" alt="menu-hotdog1" class="menu-img">
+                            <div class="store-border">
+                                <div class="menu-item-text">
+                                    <h4 class="menu-item-title">Lorem ipsum dolor</h4>
+                                    <p class="menu-item-subtitle">Lorem ipsum dolor sit, amet consectetur adipisicing elit</p>
+                                </div>
+                                <div class="menu-button">
+                                    <button class="menu-btn">Order now</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="store-down">
+                        <div class="menu-item">
+                            <img src="../image/siren.jpg" alt="menu-hotdog1" class="menu-img">
+                            <div class="store-border">
+                                <div class="menu-item-text">
+                                    <h4 class="menu-item-title">Lorem ipsum dolor</h4>
+                                    <p class="menu-item-subtitle">Lorem ipsum dolor sit, amet consectetur adipisicing elit, sed do</p>
+                                </div>
+                                <div class="menu-button">
+                                    <button class="menu-btn">Order now</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <img src="../image/rose-1.jpg" alt="menu-hotdog1" class="menu-img">
+                            <div class="store-border">
+                                <div class="menu-item-text">
+                                    <h4 class="menu-item-title">Lorem ipsum dolor</h4>
+                                    <p class="menu-item-subtitle">Lorem ipsum dolor sit, amet consectetur adipisicing elit, sed do</p>
+                                </div>
+                                <div class="menu-button">
+                                    <button class="menu-btn">Order now</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <img src="../image/pion.jpg" alt="menu-hotdog1" class="menu-img">
+                            <div class="store-border">
+                                <div class="menu-item-text">
+                                    <h4 class="menu-item-title">Lorem ipsum dolor</h4>
+                                    <p class="menu-item-subtitle">Lorem ipsum dolor sit, amet consectetur adipisicing elit, sed do</p>
+                                </div>
+                                <div class="menu-button">
+                                    <button class="menu-btn">Order now</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </main>
+</body>
+</html>

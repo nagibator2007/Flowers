@@ -1,0 +1,416 @@
+html{
+    box-sizing: border-box;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+}
+
+:root{
+    --select-border: #3581fc ;
+    --select-focus: blue;
+    --select-arrow: var(--select-border);
+}
+
+body{
+    width: 100%;  
+    background-color: #edfdff;
+}
+
+.wrapper{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+
+a{
+    text-decoration: none;
+}
+
+/*HEADER START*/
+.header-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  
+    padding: 40px 50px;
+}
+
+.logo{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    width: 175px;
+}
+
+
+.logo-image{
+    max-width: 64px;
+    max-height: 64px;
+    }
+
+.logo-text{
+width: 100px;
+}
+
+.logo-text .text{
+    font-size: 32px;
+    color: #847dfe;
+}
+
+.nav{
+
+        min-width: 500px;
+        max-height: 20px;
+      
+      }
+.nav-block{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        height: 74px;
+        align-items: center;
+        list-style: none;  
+
+        
+    }
+
+    .nav-list{
+        position: relative;
+    }
+
+.nav-list::after{
+    content: "";
+    position: absolute;
+    bottom: -5px; 
+    left: 0;
+    width: 0;
+    height: 2px; 
+    background-color: #847dfe; 
+    transition: width 0.3s ease; 
+}
+.nav-list:hover::after {
+    width: 100%; 
+  }
+
+.header-link{
+    text-decoration: none;
+    color: #847fde;
+    text-align: center;
+    font-size:  22px;
+    letter-spacing: 1px;
+      
+    padding: 10px 10px;
+}
+
+
+.header-link:hover{
+    color: #3581fc;
+    transition: 0.3s;
+}
+
+.btn{
+    width: 350px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.reg-btn{
+    background-color: #edfdff;
+    padding: 5px 24px;
+    border: 2px solid #847fde;
+    border-radius: 4px;
+    font-size: 18px;
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+.auth-btn{
+    background-color: #edfdff;
+    padding: 5px 10px;
+    border: 2px solid #847fde;
+    border-radius: 4px;
+    font-size: 18px;
+    font-weight: bold;
+
+
+    cursor: pointer;
+}
+
+
+.auth-btn:hover{
+    background-color: #3581fc;
+    border-color:#3581fc ;
+    color: #ffff;
+
+    transition-duration: 0.4s;
+}
+
+.reg-btn:hover{
+    background-color: #3581fc;
+    border-color: #3581fc;
+    color: #ffff;
+    transition-duration: 0.4s;
+}
+
+
+/*HEADER END*/
+
+/*MAIN START*/
+.main-wrapper{
+
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 40px 50px;
+
+    position: relative;
+}
+
+.store-image{
+    max-width: 1200px;
+    max-height: 600px;
+}
+
+.slider-text{
+    color: #edfdff;
+    position: absolute;
+    font-size: 64px;
+    width: 400px;
+
+    left: 20%;
+    top: 20%;
+}
+
+
+.right-arrow{
+    transform: rotate(180deg);
+}
+
+/*MAIN END*/
+
+
+
+
+/*FOOTER START*/
+.footer-text-sec{
+    text-align: center;
+}
+
+.footer-text{
+    text-decoration: none;
+    color: black;
+}
+
+.footer-text:hover{
+    transition: 0.4s;
+    color: #3581fc;
+}
+
+
+
+
+
+/*FOOTER END*/
+
+
+
+
+
+/*CATALOG-PAGE-MAIN START*/
+
+.main-wrapper-store{
+    padding: 100px 50px;
+}
+.search-form{
+   width: 700px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+.search-btn{
+    width: 200px;
+    height: 34px;
+    border: 2px solid #847fde;
+    background-color: #edfdff ;
+    
+    padding: 5px 10px;
+    font-size: 14px;
+
+    border-radius: 4px;
+}
+.search-btn:focus{  
+      border-color: #3581fc;
+    outline: none;
+
+}
+
+.search-btn::placeholder{
+    color: black;
+}
+
+
+.sort{
+    width: 200px;
+    height: 34px;
+    border: 2px solid #847fde;
+    background-color: #edfdff ;
+    
+    padding: 5px;
+    font-size: 14px;
+
+    border-radius: 4px; 
+}
+.sort:focus{
+    border-color: #3581fc;
+    outline: none
+    
+}
+
+.sort option{
+    font-weight: bold;
+    color: #333;
+}
+
+.sub-btn{
+    width: 200px;
+    height: 34px;
+
+    border: 2px solid #847fde;
+    font-size: 18px;
+    background-color: #edfdff;
+    border-radius: 4px;
+    cursor: pointer;
+
+    padding: 5px;
+    font-weight: bold;
+}
+.sub-btn:hover{
+    transition: 0.4s;
+    border-color: #3581fc;
+    background-color: #3581fc;
+    color: #ffff;
+}
+
+
+
+
+
+/*STORE START*/
+
+.main-store{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    height: auto;
+    padding: 100px 0;
+    margin: 0 auto;
+    width: 1440px;
+}
+.menu-item{
+
+
+    border: 1px solid #E3E1D5;
+    border-radius: 20px 20px 20px 20px;
+
+}
+
+.menu-img{
+border: 2px solid #3581fc;
+border-radius: 20px 20px 0px 0px;
+}
+.store-border{
+    width: 220px;
+    height: 150px;
+
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+
+
+}
+
+.store-up{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    width: 1220px;
+}
+.store-down{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    width: 1220px;
+    padding-top: 100px;
+}
+
+.menu-item-text{
+    height: 100px;
+
+display: flex;
+flex-wrap: wrap;
+flex-direction: column;
+justify-content: space-evenly;
+align-items: center;
+
+}
+.menu-item-title{
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #3581fc;
+}
+.menu-item-subtitle{
+font-size: 16px;
+font-weight: 400;
+line-height: 20px;
+letter-spacing: 0em;
+text-align: center;
+color: #717171;
+}
+.menu-button{
+
+}
+.menu-btn{
+    width: 200px;
+    background-color: #edfdff;
+    border: 2px solid #847fde;
+    border-radius: 4px;
+
+    font-size: 16px;
+    font-weight: 600;
+    padding: 5px;
+
+    cursor: pointer;
+}
+
+.menu-btn:hover{
+    color: #ffff;
+    border-color: #3581fc ;
+    background-color: #3581fc;
+    transition: 0.4s;
+}
+/*STORE END*/
+
+
+
+
+
+/*CATALOG-PAGE-MAIN END*/
