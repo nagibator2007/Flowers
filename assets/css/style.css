@@ -486,3 +486,47 @@ color: #717171;
   }
 
 /*AUTH-PAGE END*/
+
+/*REG-PAGE START*/
+
+.main-form-reg{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    text-align: left;
+    background-color: #9cc2ff;
+    height: 650px;
+    width: 650px;
+
+    border-radius: 20px;
+    
+}
+
+.form-group {
+    margin-bottom: 20px;
+  }
+  
+  label {
+    display: block;
+    font-weight: bold;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  input[type="password"],
+  input[type="checkbox"] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .error-message {
+    color: red;
+  }
+
+
+/*REG-PAGE END*/
